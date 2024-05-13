@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Penduduk</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <h2>Input Data Penduduk</h2>
+    <form action="/input-penduduk" method="post">
+        <div class="form-group">
+            <label for="nik">NIK</label>
+            <input type="text" id="nik" name="nik" required>
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" id="alamat" name="alamat" required>
+        </div>
+        <div class="form-group">
+            <label for="tanggal_lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+        </div>
+        <div class="form-group">
+            <label for="golongan_darah">Golongan Darah</label>
+            <select id="golongan_darah" name="golongan_darah" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="agama">Agama</label>
+            <input type="text" id="agama" name="agama" required>
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" id="status" name="status" required>
+        </div>
+        <button type="submit">Simpan</button>
+    </form>
+</div>
+</body>
+
+</html>
